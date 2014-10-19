@@ -8,6 +8,7 @@ class EmailController extends BaseController{
 	private $emailPassword = '';
 	private $toSendFolder = 'uploads/tosend/f';
 	
+	//inicio
 	public function start(){
 		return Redirect::to(URL::to('/').'/email');
 	}
