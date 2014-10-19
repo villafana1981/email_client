@@ -21,6 +21,7 @@ Route::get('/', function()
 Route::get('/', 'EmailController@start');
 Route::get('email/', 'EmailController@loadForm');
 Route::post('email/', 'EmailController@process');
+
 Route::get('email/{composerId}', 'EmailController@process');
 Route::post('email/{composerId}', 'EmailController@process');
 Route::delete('email/{composerId}', 'EmailController@process');
